@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ROCK PAPER SCISSORS</title>
+</head>
+
+<body>
+    <img id="ROCK" src="t8cw1t05bj041.jpg" alt="Rock Image" width="500px" height="500pxs">
+    <img id="Paper" src="paper.jpg" alt="Paper Image" width="250px" height="345px">
+    <img id="Scissor" src="compressed-h6zm.jpg" alt="Scissor Image" width="222px" height="222px">
+
+    <script>
+        var x = prompt("Enter a number between 1-6:");
+        document.write("ROCK PAPER SCISSORS <br/> <br/> ".fontsize(x));
+        var Value1 = prompt("Enter a number btween 0-2:");
+
+        switch (Value1) {
+            case "0":
+                result1 = "ROCK <br>";
+                break;
+            case "1":
+                result1 = "PAPER <br>";
+                break;
+            case "2":
+                result1 = "SCISSOR <br>";
+                break;
+            default:
+                result1 = "ERROR TRY AGAIN <br>";
+
+        }
+        document.write(result1);
+
+        var Value2 = Math.floor(Math.random() * 3);
+        switch (Value2) {
+            case 0:
+                result2 = "ROCK";
+                break;
+            case 1:
+                result2 = "PAPER";
+                break;
+            case 2:
+                result2 = "SCISSOR";
+                break;
+            default:
+                result2 = "No Grade";
+        }
+        document.write(result2);
+
+        if (Value1 > Value2) {
+            document.write("<br> YOU WON!!! <br>".fontsize(20).fontcolor("green").bold());
+        } else if (Value1 < Value2) {
+            document.write("<br> YOU LOSE !!!<br>".fontsize(20).fontcolor("red").bold());
+        } else {
+            document.write("<br> TIE!!!! <br>".fontsize(20).fontcolor("purple").bold());
+        }
+    </script>
+</body>
+
+</html>

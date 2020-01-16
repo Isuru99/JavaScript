@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BMI CALCULATOR</title>
+    </head>
+    <body>
+        <h2>BMI Problem</h2>
+        <button onclick="BMIcalc()">BMI</button>
+        <script>
+            function BMIcalc()
+            {
+                var w;
+                var h;
+                var w = prompt("Please enter your weight:");
+                var h = prompt("Please enter your height:");
+  
+  h=h/100;
+  
+  var BMI =((w)/(h*h));
+  
+  var resultMsg = "";
+  
+       if(BMI < 18.5)
+       resultMsg = "You are considered underweight.";
+       else if (BMI < 25)
+       resultMsg = "Your weight is considered normal and healthy.";
+       else if (BMI < 30)
+       resultMsg = "You are currently considered to be overweight."; 
+       else
+       resultMsg = " Your weight is considered to be unhealthy." 
+       
+  alert("Your BMI is " + BMI.toFixed(4) +  resultMsg); 
+            
+         }
+        </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Random Number</title>
+</head>
+
+<body>
+
+    <script>
+        var x = Math.floor(Math.random() * (6 - 1) + 1);
+        document.write("Random Number section <br/> <br/> ".fontsize(x));
+        var wi = Math.floor(Math.random() * (300 - 20) + 20);
+        var he = Math.floor(Math.random() * (300 - 20) + 20);
+
+        function myFunction() {
+            document.getElementById("myImg").height = he;
+            document.getElementById("myImg").width = wi;
+        }
+    </script>
+    <button onclick="myFunction()">Genarate</button> <br/> <br/>
+    <img id="myImg" src="photo-1535498730771-e735b998cd64.jpg" width="0" height="0">
+</body>
+
+</html>
